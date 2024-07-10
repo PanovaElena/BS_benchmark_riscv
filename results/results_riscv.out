@@ -1,0 +1,182 @@
+--- baseline_AoS_riscv ---
+Time: 15.5396 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5505 s, res = 20.9244 diff 3.8147e-06
+Time: 15.539 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5435 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5383 s, res = 20.9244 diff 3.8147e-06
+Time: 15.4375 s, res = 20.9244 diff 3.8147e-06
+Time: 15.542 s, res = 20.9244 diff 3.8147e-06
+Time: 15.542 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5417 s, res = 20.9244 diff 3.8147e-06
+--- baseline_SoA_riscv ---
+Time: 16.4166 s, res = 20.9244 diff 3.8147e-06
+Time: 16.4028 s, res = 20.9244 diff 3.8147e-06
+Time: 16.4744 s, res = 20.9244 diff 3.8147e-06
+Time: 16.5119 s, res = 20.9244 diff 3.8147e-06
+Time: 16.4666 s, res = 20.9244 diff 3.8147e-06
+Time: 16.4613 s, res = 20.9244 diff 3.8147e-06
+Time: 16.4521 s, res = 20.9244 diff 3.8147e-06
+Time: 16.4307 s, res = 20.9244 diff 3.8147e-06
+Time: 16.3996 s, res = 20.9244 diff 3.8147e-06
+--- 1_invariant_riscv ---
+Time: 15.698 s, res = 20.9244 diff 3.8147e-06
+Time: 15.7687 s, res = 20.9244 diff 3.8147e-06
+Time: 15.714 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6788 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6775 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6748 s, res = 20.9244 diff 3.8147e-06
+Time: 15.7193 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6581 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6648 s, res = 20.9244 diff 3.8147e-06
+--- 2_parallel_riscv ---
+OMP_NUM_THREADS=1
+omp_max_threads 1
+Time: 15.5256 s, res = 20.9244 diff 3.8147e-06
+Time: 15.4973 s, res = 20.9244 diff 3.8147e-06
+Time: 15.4946 s, res = 20.9244 diff 3.8147e-06
+omp_max_threads 1
+Time: 15.51 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5231 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5295 s, res = 20.9244 diff 3.8147e-06
+omp_max_threads 1
+Time: 15.486 s, res = 20.9244 diff 3.8147e-06
+Time: 15.4721 s, res = 20.9244 diff 3.8147e-06
+Time: 15.4767 s, res = 20.9244 diff 3.8147e-06
+OMP_NUM_THREADS=2
+omp_max_threads 2
+Time: 7.64102 s, res = 20.9244 diff 3.8147e-06
+Time: 7.63091 s, res = 20.9244 diff 3.8147e-06
+Time: 7.62977 s, res = 20.9244 diff 3.8147e-06
+omp_max_threads 2
+Time: 7.65443 s, res = 20.9244 diff 3.8147e-06
+Time: 7.65405 s, res = 20.9244 diff 3.8147e-06
+Time: 7.64269 s, res = 20.9244 diff 3.8147e-06
+omp_max_threads 2
+Time: 7.63104 s, res = 20.9244 diff 3.8147e-06
+Time: 7.6349 s, res = 20.9244 diff 3.8147e-06
+Time: 7.63332 s, res = 20.9244 diff 3.8147e-06
+OMP_NUM_THREADS=4
+omp_max_threads 4
+Time: 3.87272 s, res = 20.9244 diff 3.8147e-06
+Time: 3.85789 s, res = 20.9244 diff 3.8147e-06
+Time: 3.85488 s, res = 20.9244 diff 3.8147e-06
+omp_max_threads 4
+Time: 3.83825 s, res = 20.9244 diff 3.8147e-06
+Time: 3.82522 s, res = 20.9244 diff 3.8147e-06
+Time: 3.82032 s, res = 20.9244 diff 3.8147e-06
+omp_max_threads 4
+Time: 3.84889 s, res = 20.9244 diff 3.8147e-06
+Time: 3.85245 s, res = 20.9244 diff 3.8147e-06
+Time: 3.849 s, res = 20.9244 diff 3.8147e-06
+--- 2_parallel_numa_riscv ---
+OMP_NUM_THREADS=1
+Time: 15.1423 s, res = 20.9244 diff 3.8147e-06
+Time: 15.1766 s, res = 20.9244 diff 3.8147e-06
+Time: 15.1787 s, res = 20.9244 diff 3.8147e-06
+Time: 15.1951 s, res = 20.9244 diff 3.8147e-06
+Time: 15.1748 s, res = 20.9244 diff 3.8147e-06
+Time: 15.2352 s, res = 20.9244 diff 3.8147e-06
+Time: 15.1919 s, res = 20.9244 diff 3.8147e-06
+Time: 15.2511 s, res = 20.9244 diff 3.8147e-06
+Time: 15.2835 s, res = 20.9244 diff 3.8147e-06
+OMP_NUM_THREADS=2
+Time: 7.39518 s, res = 20.9244 diff 3.8147e-06
+Time: 7.36985 s, res = 20.9244 diff 3.8147e-06
+Time: 7.369 s, res = 20.9244 diff 3.8147e-06
+Time: 7.37043 s, res = 20.9244 diff 3.8147e-06
+Time: 7.36984 s, res = 20.9244 diff 3.8147e-06
+Time: 7.37024 s, res = 20.9244 diff 3.8147e-06
+Time: 7.37248 s, res = 20.9244 diff 3.8147e-06
+Time: 7.37085 s, res = 20.9244 diff 3.8147e-06
+Time: 7.37212 s, res = 20.9244 diff 3.8147e-06
+OMP_NUM_THREADS=4
+Time: 3.72545 s, res = 20.9244 diff 3.8147e-06
+Time: 3.7092 s, res = 20.9244 diff 3.8147e-06
+Time: 3.71949 s, res = 20.9244 diff 3.8147e-06
+Time: 3.7152 s, res = 20.9244 diff 3.8147e-06
+Time: 3.69037 s, res = 20.9244 diff 3.8147e-06
+Time: 3.69188 s, res = 20.9244 diff 3.8147e-06
+Time: 3.6963 s, res = 20.9244 diff 3.8147e-06
+Time: 3.69758 s, res = 20.9244 diff 3.8147e-06
+Time: 3.69057 s, res = 20.9244 diff 3.8147e-06
+--- 3_vectorization_pragma_simd_riscv ---
+Time: 15.6597 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6646 s, res = 20.9244 diff 3.8147e-06
+Time: 15.643 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6444 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6466 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6388 s, res = 20.9244 diff 3.8147e-06
+Time: 15.6405 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5832 s, res = 20.9244 diff 3.8147e-06
+Time: 15.5766 s, res = 20.9244 diff 3.8147e-06
+--- 3_vectorization_intrinsic_riscv ---
+Time: 17.0652 s, res = 20.9244 diff 3.8147e-06
+Time: 17.3755 s, res = 20.9244 diff 3.8147e-06
+Time: 16.9012 s, res = 20.9244 diff 3.8147e-06
+Time: 17.4122 s, res = 20.9244 diff 3.8147e-06
+Time: 17.5323 s, res = 20.9244 diff 3.8147e-06
+Time: 16.8289 s, res = 20.9244 diff 3.8147e-06
+Time: 17.0935 s, res = 20.9244 diff 3.8147e-06
+Time: 16.9746 s, res = 20.9244 diff 3.8147e-06
+Time: 16.9483 s, res = 20.9244 diff 3.8147e-06
+--- 4_math_novec_riscv ---
+Time: 12.906 s, res = 20.9244 diff 7.62939e-06
+Time: 12.9152 s, res = 20.9244 diff 7.62939e-06
+Time: 12.9094 s, res = 20.9244 diff 7.62939e-06
+Time: 12.9077 s, res = 20.9244 diff 7.62939e-06
+Time: 12.9132 s, res = 20.9244 diff 7.62939e-06
+Time: 12.9134 s, res = 20.9244 diff 7.62939e-06
+Time: 12.907 s, res = 20.9244 diff 7.62939e-06
+Time: 12.9064 s, res = 20.9244 diff 7.62939e-06
+Time: 12.9069 s, res = 20.9244 diff 7.62939e-06
+--- 4_math_riscv_m1 ---
+Time: 5.99989 s, res = 20.9244 diff 3.8147e-06
+Time: 6.01747 s, res = 20.9244 diff 3.8147e-06
+Time: 5.99085 s, res = 20.9244 diff 3.8147e-06
+Time: 6.0161 s, res = 20.9244 diff 3.8147e-06
+Time: 5.98556 s, res = 20.9244 diff 3.8147e-06
+Time: 6.02117 s, res = 20.9244 diff 3.8147e-06
+Time: 6.00844 s, res = 20.9244 diff 3.8147e-06
+Time: 6.00558 s, res = 20.9244 diff 3.8147e-06
+Time: 6.01773 s, res = 20.9244 diff 3.8147e-06
+--- 4_math_riscv ---
+Time: 3.03752 s, res = 20.9244 diff 3.8147e-06
+Time: 3.0571 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05818 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05715 s, res = 20.9244 diff 3.8147e-06
+Time: 3.0533 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05797 s, res = 20.9244 diff 3.8147e-06
+Time: 3.0324 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05712 s, res = 20.9244 diff 3.8147e-06
+Time: 3.0576 s, res = 20.9244 diff 3.8147e-06
+--- 5_math_parallel_riscv ---
+OMP_NUM_THREADS=1
+Time: 3.0573 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05733 s, res = 20.9244 diff 3.8147e-06
+Time: 3.04817 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05157 s, res = 20.9244 diff 3.8147e-06
+Time: 3.04875 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05792 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05711 s, res = 20.9244 diff 3.8147e-06
+Time: 3.03887 s, res = 20.9244 diff 3.8147e-06
+Time: 3.05727 s, res = 20.9244 diff 3.8147e-06
+OMP_NUM_THREADS=2
+Time: 1.50722 s, res = 20.9244 diff 3.8147e-06
+Time: 1.51237 s, res = 20.9244 diff 3.8147e-06
+Time: 1.51029 s, res = 20.9244 diff 3.8147e-06
+Time: 1.50673 s, res = 20.9244 diff 3.8147e-06
+Time: 1.51299 s, res = 20.9244 diff 3.8147e-06
+Time: 1.50559 s, res = 20.9244 diff 3.8147e-06
+Time: 1.50411 s, res = 20.9244 diff 3.8147e-06
+Time: 1.50582 s, res = 20.9244 diff 3.8147e-06
+Time: 1.51222 s, res = 20.9244 diff 3.8147e-06
+OMP_NUM_THREADS=4
+Time: 0.759617 s, res = 20.9244 diff 3.8147e-06
+Time: 0.759992 s, res = 20.9244 diff 3.8147e-06
+Time: 0.760448 s, res = 20.9244 diff 3.8147e-06
+Time: 0.759878 s, res = 20.9244 diff 3.8147e-06
+Time: 0.75846 s, res = 20.9244 diff 3.8147e-06
+Time: 0.758808 s, res = 20.9244 diff 3.8147e-06
+Time: 0.758518 s, res = 20.9244 diff 3.8147e-06
+Time: 0.758483 s, res = 20.9244 diff 3.8147e-06
+Time: 0.759443 s, res = 20.9244 diff 3.8147e-06

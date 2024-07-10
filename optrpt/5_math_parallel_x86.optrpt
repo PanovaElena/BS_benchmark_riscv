@@ -1,0 +1,953 @@
+Global optimization report for : _Z6my_expDv16_f
+=================================================================
+
+Global optimization report for : _Z6my_logDv16_f
+=================================================================
+
+Global optimization report for : _Z6my_erfDv16_f
+=================================================================
+
+Global optimization report for : _Z15GetOptionPricesPfS_S_S_i
+=================================================================
+
+Global optimization report for : .omp_outlined.
+
+LOOP BEGIN at ./5_math_parallel_x86.cpp (217, 1)
+
+    LOOP BEGIN at ./5_math_parallel_x86.cpp (227, 9)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : main
+
+LOOP BEGIN at ./5_math_parallel_x86.cpp (377, 5)
+
+    LOOP BEGIN at ./5_math_parallel_x86.cpp (396, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (397:23) and (397:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between (397:23) and (397:23) 
+        remark #25439: Loop unrolled with remainder by 8
+    LOOP END
+
+    LOOP BEGIN at ./5_math_parallel_x86.cpp (396, 9)
+    <Remainder loop>
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : .omp_outlined..1
+
+LOOP BEGIN at ./5_math_parallel_x86.cpp (380, 1)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at ./5_math_parallel_x86.cpp (380, 1)
+<Multiversioned v2>
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 7.000000 
+    remark #15477: vector cost: 1.937500 
+    remark #15478: estimated potential speedup: 3.312500 
+    remark #15309: vectorization support: normalized vectorization overhead 1.031250
+    remark #15482: vectorized math library calls: 0 
+    remark #15484: vector function calls: 0 
+    remark #15485: serialized function calls: 0
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 0 
+    remark #15451: unmasked unaligned unit stride stores: 4 
+    remark #15456: masked unaligned unit stride loads: 0 
+    remark #15457: masked unaligned unit stride stores: 0 
+    remark #15458: masked indexed (or gather) loads: 0 
+    remark #15459: masked indexed (or scatter) stores: 0 
+    remark #15462: unmasked indexed (or gather) loads: 0 
+    remark #15463: unmasked indexed (or scatter) stores: 0 
+    remark #15554: Unmasked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15555: Masked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15556: Unmasked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15557: Masked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15497: vector compress: 0 
+    remark #15498: vector expand: 0 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at ./5_math_parallel_x86.cpp (380, 1)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at ./5_math_parallel_x86.cpp (380, 1)
+<Multiversioned v1>
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 8
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 6.000000 
+    remark #15477: vector cost: 1.281250 
+    remark #15478: estimated potential speedup: 4.515625 
+    remark #15309: vectorization support: normalized vectorization overhead 2.328125
+    remark #15482: vectorized math library calls: 0 
+    remark #15484: vector function calls: 0 
+    remark #15485: serialized function calls: 0
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 0 
+    remark #15451: unmasked unaligned unit stride stores: 3 
+    remark #15456: masked unaligned unit stride loads: 0 
+    remark #15457: masked unaligned unit stride stores: 0 
+    remark #15458: masked indexed (or gather) loads: 0 
+    remark #15459: masked indexed (or scatter) stores: 0 
+    remark #15462: unmasked indexed (or gather) loads: 0 
+    remark #15463: unmasked indexed (or scatter) stores: 0 
+    remark #15554: Unmasked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15555: Masked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15556: Unmasked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15557: Masked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15497: vector compress: 0 
+    remark #15498: vector expand: 0 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN
+<Remainder loop for vectorization>
+    remark #15440: remainder loop was vectorized (masked)
+    remark #15305: vectorization support: vector length 8
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15482: vectorized math library calls: 0 
+    remark #15484: vector function calls: 0 
+    remark #15485: serialized function calls: 0
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 0 
+    remark #15451: unmasked unaligned unit stride stores: 0 
+    remark #15456: masked unaligned unit stride loads: 0 
+    remark #15457: masked unaligned unit stride stores: 3 
+    remark #15458: masked indexed (or gather) loads: 0 
+    remark #15459: masked indexed (or scatter) stores: 0 
+    remark #15462: unmasked indexed (or gather) loads: 0 
+    remark #15463: unmasked indexed (or scatter) stores: 0 
+    remark #15554: Unmasked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15555: Masked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15556: Unmasked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15557: Masked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15497: vector compress: 0 
+    remark #15498: vector expand: 0 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+=================================================================
+
+Global optimization report for : _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_5_math_parallel_x86.cpp
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: _ZL13_mm512_add_psDv16_fS_
+
+DEAD STATIC FUNC: _ZL13_mm512_and_psDv16_fS_
+
+DEAD STATIC FUNC: _ZL13_mm512_div_psDv16_fS_
+
+DEAD STATIC FUNC: _ZL13_mm512_mul_psDv16_fS_
+
+DEAD STATIC FUNC: _ZL13_mm512_sub_psDv16_fS_
+
+DEAD STATIC FUNC: _ZL14_mm512_load_pdPKv
+
+DEAD STATIC FUNC: _ZL14_mm512_set1_psf
+
+DEAD STATIC FUNC: _ZL14_mm512_sqrt_psDv16_f
+
+DEAD STATIC FUNC: _ZL15_mm512_or_epi32Dv8_xS_
+
+DEAD STATIC FUNC: _ZL15_mm512_store_psPvDv16_f
+
+DEAD STATIC FUNC: _ZL16_mm512_add_epi32Dv8_xS_
+
+DEAD STATIC FUNC: _ZL16_mm512_and_epi32Dv8_xS_
+
+DEAD STATIC FUNC: _ZL16_mm512_sub_epi32Dv8_xS_
+
+DEAD STATIC FUNC: _ZL17_mm512_set1_epi32i
+
+DEAD STATIC FUNC: _ZL17_mm512_sllv_epi32Dv8_xS_
+
+DEAD STATIC FUNC: _ZL17_mm512_srav_epi32Dv8_xS_
+
+DEAD STATIC FUNC: _ZL18__gthread_active_pv
+
+DEAD STATIC FUNC: _ZL18_mm512_cvtepi32_psDv8_x
+
+DEAD STATIC FUNC: _ZL19_mm512_castps_si512Dv16_f
+
+DEAD STATIC FUNC: _ZL19_mm512_castsi512_psDv8_x
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcED2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxxL18__exchange_and_addEPVii
+
+DEAD STATIC FUNC: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii
+
+DEAD STATIC FUNC: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii
+
+DEAD STATIC FUNC: _ZNKSs13get_allocatorEv
+
+DEAD STATIC FUNC: _ZNKSs4dataEv
+
+DEAD STATIC FUNC: _ZNKSs4sizeEv
+
+DEAD STATIC FUNC: _ZNKSs6_M_repEv
+
+DEAD STATIC FUNC: _ZNKSs7_M_dataEv
+
+DEAD STATIC FUNC: _ZNKSt5ctypeIcE5widenEc
+
+DEAD STATIC FUNC: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+
+DEAD STATIC FUNC: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+
+DEAD STATIC FUNC: _ZNSaIcEC2ERKS_
+
+DEAD STATIC FUNC: _ZNSaIcEC2Ev
+
+DEAD STATIC FUNC: _ZNSaIcED2Ev
+
+DEAD STATIC FUNC: _ZNSdC2Ev
+
+DEAD STATIC FUNC: _ZNSdD2Ev
+
+DEAD STATIC FUNC: _ZNSiC2Ev
+
+DEAD STATIC FUNC: _ZNSiD2Ev
+
+DEAD STATIC FUNC: _ZNSirsERm
+
+DEAD STATIC FUNC: _ZNSoC2Ev
+
+DEAD STATIC FUNC: _ZNSoD2Ev
+
+DEAD STATIC FUNC: _ZNSolsEPFRSoS_E
+
+DEAD STATIC FUNC: _ZNSolsEd
+
+DEAD STATIC FUNC: _ZNSolsEf
+
+DEAD STATIC FUNC: _ZNSs4_Rep10_M_disposeERKSaIcE
+
+DEAD STATIC FUNC: _ZNSs4_Rep12_S_empty_repEv
+
+DEAD STATIC FUNC: _ZNSsC1EPKcmRKSaIcE
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6lengthEPKc
+
+DEAD STATIC FUNC: _ZNSt15basic_streambufIcSt11char_traitsIcEEC2Ev
+
+DEAD STATIC FUNC: _ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE17_M_stringbuf_initESt13_Ios_Openmode
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE7_M_syncEPcmm
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEEC2ERKSsSt13_Ios_Openmode
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev
+
+DEAD STATIC FUNC: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED2Ev
+
+DEAD STATIC FUNC: _ZNSt6localeC1Ev
+
+DEAD STATIC FUNC: _ZNSt8ios_baseC2Ev
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEEC2Ev
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev
+
+DEAD STATIC FUNC: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+
+DEAD STATIC FUNC: _ZSt3absf
+
+DEAD STATIC FUNC: _ZSt3erff
+
+DEAD STATIC FUNC: _ZSt3expf
+
+DEAD STATIC FUNC: _ZSt3logf
+
+DEAD STATIC FUNC: _ZSt3maxIfERKT_S2_S2_
+
+DEAD STATIC FUNC: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+
+DEAD STATIC FUNC: _ZSt4sqrtf
+
+DEAD STATIC FUNC: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+
+DEAD STATIC FUNC: _ZSt9terminatev
+
+DEAD STATIC FUNC: _ZStanSt13_Ios_OpenmodeS_
+
+DEAD STATIC FUNC: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+
+DEAD STATIC FUNC: _ZStorSt12_Ios_IostateS_
+
+DEAD STATIC FUNC: _ZStorSt13_Ios_OpenmodeS_
+
+DEAD STATIC FUNC: __clang_call_terminate
+
+DEAD STATIC FUNC: __cxa_begin_catch
+
+DEAD STATIC FUNC: __cxx_global_var_init
+
+DEAD STATIC FUNC: atoi
+
+DEAD STATIC FUNC: llvm.x86.avx512.psllv.d.512
+
+DEAD STATIC FUNC: llvm.x86.avx512.psrav.d.512
+
+DEAD STATIC FUNC: strlen
+
+COMPILE FUNC: _ZNSsD2Ev
+   -> INLINE: _ZNKSs6_M_repEv ./5_math_parallel_x86.cpp (539,9) (-30<=337)
+      -> INLINE: _ZNKSs7_M_dataEv ./5_math_parallel_x86.cpp (301,44) (-30<=337)
+   -> INLINE: _ZNKSs13get_allocatorEv ./5_math_parallel_x86.cpp (539,36) (-40<=337)
+      -> INLINE: _ZNSaIcEC2ERKS_ ./5_math_parallel_x86.cpp (1818,16) (-40<=337)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./5_math_parallel_x86.cpp (116,9) (-15040<=337)
+   -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./5_math_parallel_x86.cpp (539,19) (45<=225)
+      -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./5_math_parallel_x86.cpp (240,34) (-30<=337)
+      -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./5_math_parallel_x86.cpp (245,12) (-10<=45)
+         -> INLINE: _ZL18__gthread_active_pv ./5_math_parallel_x86.cpp (81,9) (-15030<=487)
+         -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./5_math_parallel_x86.cpp (82,14) (-15030<=487)
+         -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./5_math_parallel_x86.cpp (84,14) (-15020<=487)
+      -> DELETE: _ZNSs4_Rep10_M_destroyERKSaIcE ./5_math_parallel_x86.cpp (249,5)
+   -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,9) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+   -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,54) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+   -> DELETE: __clang_call_terminate ./5_math_parallel_x86.cpp (539,19)
+
+COMPILE FUNC: _Z6my_expDv16_f
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (30,23)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (31,17)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (32,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (33,10)
+   -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (36,18)
+   -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (39,19)
+   -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (40,25)
+   -> INLINE: _ZL13_mm512_and_psDv16_fS_ ./5_math_parallel_x86.cpp (41,18)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (45,16)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (46,17)
+   -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (47,10)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (48,16)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (49,11)
+   -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (50,10)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (59,16)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (60,17)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (61,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (62,10)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (63,10)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (64,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (65,10)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (66,10)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (67,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (68,10)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (69,10)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (70,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (71,10)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (72,10)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (73,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (74,10)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (75,10)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (76,10)
+   -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (80,19)
+   -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (81,17)
+   -> INLINE: _ZL17_mm512_sllv_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (82,10)
+      -> DELETE: llvm.x86.avx512.psllv.d.512 ./5_math_parallel_x86.cpp
+   -> INLINE: _ZL16_mm512_add_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (83,11)
+   -> INLINE: _ZL19_mm512_castsi512_psDv8_x ./5_math_parallel_x86.cpp (84,10)
+
+COMPILE FUNC: _Z6my_logDv16_f
+   -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (100,20)
+   -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (101,25)
+   -> INLINE: _ZL16_mm512_sub_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (102,19)
+   -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (103,30)
+   -> INLINE: _ZL17_mm512_srav_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (104,12)
+      -> DELETE: llvm.x86.avx512.psrav.d.512 ./5_math_parallel_x86.cpp
+   -> INLINE: _ZL15_mm512_or_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (107,12)
+   -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (108,17)
+   -> INLINE: _ZL16_mm512_and_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (109,12)
+   -> INLINE: _ZL19_mm512_castsi512_psDv8_x ./5_math_parallel_x86.cpp (112,16)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (115,23)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (116,16)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (117,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (118,18)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (119,9)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (122,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (123,16)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (124,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (125,19)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (126,9)
+   -> INLINE: _ZL18_mm512_cvtepi32_psDv8_x ./5_math_parallel_x86.cpp (129,16)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (130,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (131,16)
+   -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (134,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (137,23)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (138,16)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (139,21)
+
+COMPILE FUNC: _Z6my_erfDv16_f
+   -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (152,25)
+   -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (153,30)
+   -> INLINE: _ZL17_mm512_srav_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (154,13)
+      -> DELETE: llvm.x86.avx512.psrav.d.512 ./5_math_parallel_x86.cpp
+   -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (155,25)
+   -> INLINE: _ZL15_mm512_or_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (156,12)
+   -> INLINE: _ZL18_mm512_cvtepi32_psDv8_x ./5_math_parallel_x86.cpp (157,25)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (159,19)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (161,23)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (162,20)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (163,24)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (164,13)
+   -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (165,16)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (167,16)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (168,20)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (169,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (170,13)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (171,13)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (172,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (173,13)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (174,13)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (175,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (176,13)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (177,13)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (178,16)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (179,13)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (180,13)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (182,16)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (183,22)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (184,29)
+   -> INLINE: _Z6my_expDv16_f ./5_math_parallel_x86.cpp (185,22) (70<=674)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (30,23)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (31,17)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (32,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (33,10)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (36,18)
+      -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (39,19)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (40,25)
+      -> INLINE: _ZL13_mm512_and_psDv16_fS_ ./5_math_parallel_x86.cpp (41,18)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (45,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (46,17)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (47,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (48,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (49,11)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (50,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (59,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (60,17)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (61,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (62,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (63,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (64,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (65,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (66,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (67,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (68,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (69,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (70,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (71,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (72,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (73,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (74,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (75,10)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (76,10)
+      -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (80,19)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (81,17)
+      -> INLINE: _ZL17_mm512_sllv_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (82,10)
+      -> INLINE: _ZL16_mm512_add_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (83,11)
+      -> INLINE: _ZL19_mm512_castsi512_psDv8_x ./5_math_parallel_x86.cpp (84,10)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (187,13)
+   -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (188,16)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (191,26)
+
+COMPILE FUNC: .omp_outlined.
+   -> EXTERN: __kmpc_for_static_init_4 ./5_math_parallel_x86.cpp (217,1)
+   -> llvm.smin.i32 ./5_math_parallel_x86.cpp (218,10)
+   -> INLINE: _ZL14_mm512_load_pdPKv ./5_math_parallel_x86.cpp (231,25)
+   -> INLINE: _ZL14_mm512_load_pdPKv ./5_math_parallel_x86.cpp (232,25)
+   -> INLINE: _ZL14_mm512_load_pdPKv ./5_math_parallel_x86.cpp (233,26)
+   -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (241,21)
+   -> INLINE: _Z6my_logDv16_f ./5_math_parallel_x86.cpp (248,21) (40<=674)
+      -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (100,20)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (101,25)
+      -> INLINE: _ZL16_mm512_sub_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (102,19)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (103,30)
+      -> INLINE: _ZL17_mm512_srav_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (104,12)
+      -> INLINE: _ZL15_mm512_or_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (107,12)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (108,17)
+      -> INLINE: _ZL16_mm512_and_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (109,12)
+      -> INLINE: _ZL19_mm512_castsi512_psDv8_x ./5_math_parallel_x86.cpp (112,16)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (115,23)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (116,16)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (117,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (118,18)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (119,9)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (122,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (123,16)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (124,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (125,19)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (126,9)
+      -> INLINE: _ZL18_mm512_cvtepi32_psDv8_x ./5_math_parallel_x86.cpp (129,16)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (130,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (131,16)
+      -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (134,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (137,23)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (138,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (139,21)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (251,31)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (252,26)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (253,21)
+   -> INLINE: _ZL14_mm512_sqrt_psDv16_f ./5_math_parallel_x86.cpp (259,21)
+      -> llvm.sqrt.v16f32 ./5_math_parallel_x86.cpp
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (262,24)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (263,21)
+   -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (266,21)
+   -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (273,21)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (279,36)
+   -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (280,21)
+   -> INLINE: _Z6my_erfDv16_f ./5_math_parallel_x86.cpp (287,21) (175<=674)
+      -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (152,25)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (153,30)
+      -> INLINE: _ZL17_mm512_srav_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (154,13)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (155,25)
+      -> INLINE: _ZL15_mm512_or_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (156,12)
+      -> INLINE: _ZL18_mm512_cvtepi32_psDv8_x ./5_math_parallel_x86.cpp (157,25)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (159,19)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (161,23)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (162,20)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (163,24)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (164,13)
+      -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (165,16)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (167,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (168,20)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (169,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (170,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (171,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (172,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (173,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (174,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (175,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (176,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (177,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (178,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (179,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (180,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (182,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (183,22)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (184,29)
+      -> INLINE: _Z6my_expDv16_f ./5_math_parallel_x86.cpp (185,22) (70<=674)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (30,23)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (31,17)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (32,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (33,10)
+         -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (36,18)
+         -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (39,19)
+         -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (40,25)
+         -> INLINE: _ZL13_mm512_and_psDv16_fS_ ./5_math_parallel_x86.cpp (41,18)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (45,16)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (46,17)
+         -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (47,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (48,16)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (49,11)
+         -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (50,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (59,16)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (60,17)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (61,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (62,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (63,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (64,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (65,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (66,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (67,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (68,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (69,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (70,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (71,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (72,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (73,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (74,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (75,10)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (76,10)
+         -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (80,19)
+         -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (81,17)
+         -> INLINE: _ZL17_mm512_sllv_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (82,10)
+         -> INLINE: _ZL16_mm512_add_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (83,11)
+         -> INLINE: _ZL19_mm512_castsi512_psDv8_x ./5_math_parallel_x86.cpp (84,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (187,13)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (188,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (191,26)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (290,24)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (291,21)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (292,21)
+   -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (298,21)
+   -> INLINE: _Z6my_erfDv16_f ./5_math_parallel_x86.cpp (305,21) (175<=674)
+      -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (152,25)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (153,30)
+      -> INLINE: _ZL17_mm512_srav_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (154,13)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (155,25)
+      -> INLINE: _ZL15_mm512_or_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (156,12)
+      -> INLINE: _ZL18_mm512_cvtepi32_psDv8_x ./5_math_parallel_x86.cpp (157,25)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (159,19)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (161,23)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (162,20)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (163,24)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (164,13)
+      -> INLINE: _ZL13_mm512_div_psDv16_fS_ ./5_math_parallel_x86.cpp (165,16)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (167,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (168,20)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (169,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (170,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (171,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (172,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (173,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (174,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (175,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (176,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (177,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (178,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (179,13)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (180,13)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (182,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (183,22)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (184,29)
+      -> INLINE: _Z6my_expDv16_f ./5_math_parallel_x86.cpp (185,22) (70<=674)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (30,23)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (31,17)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (32,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (33,10)
+         -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (36,18)
+         -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (39,19)
+         -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (40,25)
+         -> INLINE: _ZL13_mm512_and_psDv16_fS_ ./5_math_parallel_x86.cpp (41,18)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (45,16)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (46,17)
+         -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (47,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (48,16)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (49,11)
+         -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (50,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (59,16)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (60,17)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (61,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (62,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (63,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (64,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (65,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (66,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (67,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (68,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (69,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (70,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (71,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (72,10)
+         -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (73,16)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (74,10)
+         -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (75,10)
+         -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (76,10)
+         -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (80,19)
+         -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (81,17)
+         -> INLINE: _ZL17_mm512_sllv_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (82,10)
+         -> INLINE: _ZL16_mm512_add_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (83,11)
+         -> INLINE: _ZL19_mm512_castsi512_psDv8_x ./5_math_parallel_x86.cpp (84,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (187,13)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (188,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (191,26)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (308,21)
+   -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (309,21)
+   -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (315,24)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (316,21)
+   -> INLINE: _Z6my_expDv16_f ./5_math_parallel_x86.cpp (323,21) (70<=674)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (30,23)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (31,17)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (32,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (33,10)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (36,18)
+      -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (39,19)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (40,25)
+      -> INLINE: _ZL13_mm512_and_psDv16_fS_ ./5_math_parallel_x86.cpp (41,18)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (45,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (46,17)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (47,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (48,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (49,11)
+      -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (50,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (59,16)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (60,17)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (61,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (62,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (63,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (64,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (65,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (66,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (67,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (68,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (69,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (70,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (71,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (72,10)
+      -> INLINE: _ZL14_mm512_set1_psf ./5_math_parallel_x86.cpp (73,16)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (74,10)
+      -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (75,10)
+      -> INLINE: _ZL13_mm512_add_psDv16_fS_ ./5_math_parallel_x86.cpp (76,10)
+      -> INLINE: _ZL19_mm512_castps_si512Dv16_f ./5_math_parallel_x86.cpp (80,19)
+      -> INLINE: _ZL17_mm512_set1_epi32i ./5_math_parallel_x86.cpp (81,17)
+      -> INLINE: _ZL17_mm512_sllv_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (82,10)
+      -> INLINE: _ZL16_mm512_add_epi32Dv8_xS_ ./5_math_parallel_x86.cpp (83,11)
+      -> INLINE: _ZL19_mm512_castsi512_psDv8_x ./5_math_parallel_x86.cpp (84,10)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (326,21)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (329,21)
+   -> INLINE: _ZL13_mm512_mul_psDv16_fS_ ./5_math_parallel_x86.cpp (332,21)
+   -> INLINE: _ZL13_mm512_sub_psDv16_fS_ ./5_math_parallel_x86.cpp (333,21)
+   -> INLINE: _ZL15_mm512_store_psPvDv16_f ./5_math_parallel_x86.cpp (336,13)
+   -> EXTERN: __kmpc_for_static_fini ./5_math_parallel_x86.cpp (217,25)
+   -> DELETE: __clang_call_terminate ./5_math_parallel_x86.cpp (231,25)
+
+COMPILE FUNC: _Z15GetOptionPricesPfS_S_S_i
+   -> INLINE: _ZSt4sqrtf ./5_math_parallel_x86.cpp (198,25) (-30<=487)
+      -> EXTERN: sqrtf ./5_math_parallel_x86.cpp (483,12)
+   -> EXTERN: omp_get_max_threads ./5_math_parallel_x86.cpp (205,13)
+   -> EXTERN: __kmpc_fork_call ./5_math_parallel_x86.cpp (217,1)
+
+COMPILE FUNC: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEEC1ERKSsSt13_Ios_Openmode
+   -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEEC2Ev ./5_math_parallel_x86.cpp (553,7) (25<=337)
+      -> DELETE: _ZNSt8ios_baseC2Ev ./5_math_parallel_x86.cpp (455,9)
+      -> DELETE: llvm.memset.p0i8.i64 ./5_math_parallel_x86.cpp (456,2)
+   -> INLINE: _ZNSdC2Ev ./5_math_parallel_x86.cpp (555,9) (190<=225)
+      -> INLINE: _ZNSiC2Ev ./5_math_parallel_x86.cpp (831,9) (40<=337)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E ./5_math_parallel_x86.cpp (608,15)
+      -> INLINE: _ZNSoC2Ev ./5_math_parallel_x86.cpp (831,27) (35<=337)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E ./5_math_parallel_x86.cpp (385,15)
+      -> INLINE: _ZNSiD2Ev ./5_math_parallel_x86.cpp (831,46) (-10<=45)
+   -> DELETE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEEC2ERKSsSt13_Ios_Openmode ./5_math_parallel_x86.cpp (555,28)
+   -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E ./5_math_parallel_x86.cpp (556,15)
+   -> DELETE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev ./5_math_parallel_x86.cpp (556,36)
+   -> INLINE: _ZNSdD2Ev ./5_math_parallel_x86.cpp (556,36) (-10<=45)
+      -> INLINE: _ZNSoD2Ev ./5_math_parallel_x86.cpp (827,27) (-40<=337)
+      -> INLINE: _ZNSiD2Ev ./5_math_parallel_x86.cpp (827,27) (-10<=337)
+   -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev ./5_math_parallel_x86.cpp (556,36) (0<=45)
+      -> EXTERN: _ZNSt8ios_baseD2Ev ./5_math_parallel_x86.cpp (276,22)
+
+COMPILE FUNC: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev
+   -> INLINE: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED2Ev ./5_math_parallel_x86.cpp (565,7) (165<=225)
+      -> INLINE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev ./5_math_parallel_x86.cpp (565,9) (105<=675)
+         -> INLINE: _ZNSsD2Ev ./5_math_parallel_x86.cpp (272,25) (60<=225)
+            -> INLINE: _ZNKSs6_M_repEv ./5_math_parallel_x86.cpp (539,9) (-30<=337)
+               -> INLINE: _ZNKSs7_M_dataEv ./5_math_parallel_x86.cpp (301,44) (-30<=337)
+            -> INLINE: _ZNKSs13get_allocatorEv ./5_math_parallel_x86.cpp (539,36) (-40<=337)
+               -> INLINE: _ZNSaIcEC2ERKS_ ./5_math_parallel_x86.cpp (1818,16) (-40<=337)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./5_math_parallel_x86.cpp (116,9) (-15040<=337)
+            -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./5_math_parallel_x86.cpp (539,19) (45<=225)
+               -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./5_math_parallel_x86.cpp (240,34) (-30<=337)
+               -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./5_math_parallel_x86.cpp (245,12) (-10<=45)
+                  -> INLINE: _ZL18__gthread_active_pv ./5_math_parallel_x86.cpp (81,9) (-15030<=487)
+                  -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./5_math_parallel_x86.cpp (82,14) (-15030<=487)
+                  -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./5_math_parallel_x86.cpp (84,14) (-15020<=487)
+               -> DELETE: _ZNSs4_Rep10_M_destroyERKSaIcE ./5_math_parallel_x86.cpp (249,5)
+            -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,9) (-35<=337)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+            -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,54) (-35<=337)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+         -> INLINE: _ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev ./5_math_parallel_x86.cpp (272,25) (5<=337)
+            -> DELETE: _ZNSt6localeD1Ev ./5_math_parallel_x86.cpp (198,9)
+      -> INLINE: _ZNSdD2Ev ./5_math_parallel_x86.cpp (565,9) (-10<=337)
+         -> INLINE: _ZNSoD2Ev ./5_math_parallel_x86.cpp (827,27) (-40<=337)
+         -> INLINE: _ZNSiD2Ev ./5_math_parallel_x86.cpp (827,27) (-10<=337)
+   -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev ./5_math_parallel_x86.cpp (565,7) (0<=337)
+      -> DELETE: _ZNSt8ios_baseD2Ev ./5_math_parallel_x86.cpp (276,22)
+
+COMPILE FUNC: .omp_outlined..1
+   -> EXTERN: __kmpc_for_static_init_4 ./5_math_parallel_x86.cpp (380,1)
+   -> llvm.smin.i32 ./5_math_parallel_x86.cpp (381,14)
+   -> EXTERN: __kmpc_for_static_fini ./5_math_parallel_x86.cpp (380,25)
+
+COMPILE FUNC: main
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./5_math_parallel_x86.cpp (357,19) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./5_math_parallel_x86.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./5_math_parallel_x86.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./5_math_parallel_x86.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./5_math_parallel_x86.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./5_math_parallel_x86.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./5_math_parallel_x86.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./5_math_parallel_x86.cpp (535,2)
+   -> INLINE: _ZNSolsEPFRSoS_E ./5_math_parallel_x86.cpp (357,35) (-180<=337)
+      -> INLINE:  ./5_math_parallel_x86.cpp (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc ./5_math_parallel_x86.cpp (565,34) (85<=225)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ ./5_math_parallel_x86.cpp (444,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv ./5_math_parallel_x86.cpp (49,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc ./5_math_parallel_x86.cpp (444,40) (-14955<=225)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv ./5_math_parallel_x86.cpp (869,8)
+               -> INDIRECT:  ./5_math_parallel_x86.cpp (870,15)
+         -> EXTERN: _ZNSo3putEc ./5_math_parallel_x86.cpp (565,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ ./5_math_parallel_x86.cpp (565,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv ./5_math_parallel_x86.cpp (587,19)
+   -> INLINE: _ZNSaIcEC2Ev ./5_math_parallel_x86.cpp (361,28) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2Ev ./5_math_parallel_x86.cpp (113,7) (-15035<=337)
+   -> EXTERN: _ZNSsC1EPKcRKSaIcE ./5_math_parallel_x86.cpp (361,28)
+   -> INLINE: _ZStorSt13_Ios_OpenmodeS_ ./5_math_parallel_x86.cpp (361,23) (-15040<=487)
+   -> _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEEC1ERKSsSt13_Ios_Openmode ./5_math_parallel_x86.cpp (361,23) (440>225)
+   -> INLINE: _ZNSsD2Ev ./5_math_parallel_x86.cpp (361,23) (55<=225)
+      -> INLINE: _ZNKSs6_M_repEv ./5_math_parallel_x86.cpp (539,9) (-30<=337)
+         -> INLINE: _ZNKSs7_M_dataEv ./5_math_parallel_x86.cpp (301,44) (-30<=337)
+      -> INLINE: _ZNKSs13get_allocatorEv ./5_math_parallel_x86.cpp (539,36) (-40<=337)
+         -> INLINE: _ZNSaIcEC2ERKS_ ./5_math_parallel_x86.cpp (1818,16) (-40<=337)
+            -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./5_math_parallel_x86.cpp (116,9) (-15040<=337)
+      -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./5_math_parallel_x86.cpp (539,19) (45<=225)
+         -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./5_math_parallel_x86.cpp (240,34) (-30<=337)
+         -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./5_math_parallel_x86.cpp (245,12) (-10<=45)
+            -> INLINE: _ZL18__gthread_active_pv ./5_math_parallel_x86.cpp (81,9) (-15030<=487)
+            -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./5_math_parallel_x86.cpp (82,14) (-15030<=487)
+            -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./5_math_parallel_x86.cpp (84,14) (-15020<=487)
+         -> EXTERN: _ZNSs4_Rep10_M_destroyERKSaIcE ./5_math_parallel_x86.cpp (249,5)
+      -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,9) (-35<=337)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+      -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,54) (-35<=337)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+   -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (361,23) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+   -> INLINE: _ZNSirsERm ./5_math_parallel_x86.cpp (362,10) (0<=337)
+      -> EXTERN: _ZNSi10_M_extractImEERSiRT_ ./5_math_parallel_x86.cpp (191,16)
+   -> INLINE: atoi ./5_math_parallel_x86.cpp (363,17) (10<=487)
+      -> EXTERN: strtol ./5_math_parallel_x86.cpp (280,16)
+   -> EXTERN: _Znam ./5_math_parallel_x86.cpp (366,12)
+   -> INLINE: _ZSt3logf ./5_math_parallel_x86.cpp (371,17) (-15000<=487)
+      -> EXTERN: logf ./5_math_parallel_x86.cpp (358,12)
+   -> INLINE: _ZSt4sqrtf ./5_math_parallel_x86.cpp (371,73) (-30<=487)
+      -> EXTERN: sqrtf ./5_math_parallel_x86.cpp (483,12)
+   -> INLINE: _ZSt4sqrtf ./5_math_parallel_x86.cpp (372,27) (-30<=487)
+      -> EXTERN: sqrtf ./5_math_parallel_x86.cpp (483,12)
+   -> llvm.fmuladd.f32 ./5_math_parallel_x86.cpp (372,19)
+   -> INLINE: _ZSt4sqrtf ./5_math_parallel_x86.cpp (373,39) (-30<=1012)
+      -> EXTERN: sqrtf ./5_math_parallel_x86.cpp (483,12)
+   -> INLINE: _ZSt3erff ./5_math_parallel_x86.cpp (373,25) (0<=337)
+      -> EXTERN: erff ./5_math_parallel_x86.cpp (1256,12)
+   -> llvm.fmuladd.f32 ./5_math_parallel_x86.cpp (373,23)
+   -> INLINE: _ZSt4sqrtf ./5_math_parallel_x86.cpp (374,39) (-15030<=487)
+      -> EXTERN: sqrtf ./5_math_parallel_x86.cpp (483,12)
+   -> INLINE: _ZSt3erff ./5_math_parallel_x86.cpp (374,25) (-15000<=337)
+      -> EXTERN: erff ./5_math_parallel_x86.cpp (1256,12)
+   -> llvm.fmuladd.f32 ./5_math_parallel_x86.cpp (374,23)
+   -> INLINE: _ZSt3expf ./5_math_parallel_x86.cpp (375,34) (-15000<=487)
+      -> EXTERN: expf ./5_math_parallel_x86.cpp (242,12)
+   -> llvm.fmuladd.f32 ./5_math_parallel_x86.cpp (375,28)
+   -> _ZNSsD2Ev ./5_math_parallel_x86.cpp (361,23) (55>45 [EE:55>45])
+   -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (361,23) (-35<=45)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+   -> EXTERN: __kmpc_fork_call ./5_math_parallel_x86.cpp (380,1)
+   -> EXTERN: omp_get_wtime ./5_math_parallel_x86.cpp (389,21)
+   -> _Z15GetOptionPricesPfS_S_S_i ./5_math_parallel_x86.cpp (390,9) (230>225)
+   -> EXTERN: omp_get_wtime ./5_math_parallel_x86.cpp (391,21)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./5_math_parallel_x86.cpp (398,19) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./5_math_parallel_x86.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./5_math_parallel_x86.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./5_math_parallel_x86.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./5_math_parallel_x86.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./5_math_parallel_x86.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./5_math_parallel_x86.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./5_math_parallel_x86.cpp (535,2)
+   -> INLINE: _ZSt3absf ./5_math_parallel_x86.cpp (397,41) (-15030<=487)
+      -> DELETE: llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+      -> llvm.fabs.f32 ./5_math_parallel_x86.cpp (88,12)
+   -> INLINE: _ZSt3maxIfERKT_S2_S2_ ./5_math_parallel_x86.cpp (397,23) (-15020<=487)
+   -> INLINE: _ZNSolsEd ./5_math_parallel_x86.cpp (398,31) (0<=337)
+      -> EXTERN: _ZNSo9_M_insertIdEERSoT_ ./5_math_parallel_x86.cpp (221,16)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./5_math_parallel_x86.cpp (398,42) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./5_math_parallel_x86.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./5_math_parallel_x86.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./5_math_parallel_x86.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./5_math_parallel_x86.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./5_math_parallel_x86.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./5_math_parallel_x86.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./5_math_parallel_x86.cpp (535,2)
+   -> INLINE: _ZNSolsEf ./5_math_parallel_x86.cpp (398,58) (5<=337)
+      -> EXTERN: _ZNSo9_M_insertIdEERSoT_ ./5_math_parallel_x86.cpp (228,9)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./5_math_parallel_x86.cpp (398,78) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./5_math_parallel_x86.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./5_math_parallel_x86.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./5_math_parallel_x86.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./5_math_parallel_x86.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./5_math_parallel_x86.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./5_math_parallel_x86.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./5_math_parallel_x86.cpp (535,2)
+   -> INLINE: _ZNSolsEf ./5_math_parallel_x86.cpp (398,90) (5<=337)
+      -> EXTERN: _ZNSo9_M_insertIdEERSoT_ ./5_math_parallel_x86.cpp (228,9)
+   -> INLINE: _ZNSolsEPFRSoS_E ./5_math_parallel_x86.cpp (398,101) (-180<=337)
+      -> INLINE:  ./5_math_parallel_x86.cpp (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc ./5_math_parallel_x86.cpp (565,34) (85<=225)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ ./5_math_parallel_x86.cpp (444,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv ./5_math_parallel_x86.cpp (49,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc ./5_math_parallel_x86.cpp (444,40) (-14955<=225)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv ./5_math_parallel_x86.cpp (869,8)
+               -> INDIRECT:  ./5_math_parallel_x86.cpp (870,15)
+         -> EXTERN: _ZNSo3putEc ./5_math_parallel_x86.cpp (565,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ ./5_math_parallel_x86.cpp (565,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv ./5_math_parallel_x86.cpp (587,19)
+   -> EXTERN: _ZdaPv ./5_math_parallel_x86.cpp (401,5)
+   -> INLINE: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev ./5_math_parallel_x86.cpp (403,1) (205<=225)
+      -> INLINE: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED2Ev ./5_math_parallel_x86.cpp (565,7) (165<=225)
+         -> INLINE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev ./5_math_parallel_x86.cpp (565,9) (105<=675)
+            -> INLINE: _ZNSsD2Ev ./5_math_parallel_x86.cpp (272,25) (60<=225)
+               -> INLINE: _ZNKSs6_M_repEv ./5_math_parallel_x86.cpp (539,9) (-30<=337)
+                  -> INLINE: _ZNKSs7_M_dataEv ./5_math_parallel_x86.cpp (301,44) (-30<=337)
+               -> INLINE: _ZNKSs13get_allocatorEv ./5_math_parallel_x86.cpp (539,36) (-40<=337)
+                  -> INLINE: _ZNSaIcEC2ERKS_ ./5_math_parallel_x86.cpp (1818,16) (-40<=337)
+                     -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./5_math_parallel_x86.cpp (116,9) (-15040<=337)
+               -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./5_math_parallel_x86.cpp (539,19) (45<=225)
+                  -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./5_math_parallel_x86.cpp (240,34) (-30<=337)
+                  -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./5_math_parallel_x86.cpp (245,12) (-10<=45)
+                     -> INLINE: _ZL18__gthread_active_pv ./5_math_parallel_x86.cpp (81,9) (-15030<=487)
+                     -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./5_math_parallel_x86.cpp (82,14) (-15030<=487)
+                     -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./5_math_parallel_x86.cpp (84,14) (-15020<=487)
+                  -> EXTERN: _ZNSs4_Rep10_M_destroyERKSaIcE ./5_math_parallel_x86.cpp (249,5)
+               -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,9) (-35<=337)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+               -> INLINE: _ZNSaIcED2Ev ./5_math_parallel_x86.cpp (539,54) (-35<=337)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./5_math_parallel_x86.cpp (121,30) (-15035<=337)
+            -> INLINE: _ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev ./5_math_parallel_x86.cpp (272,25) (5<=337)
+               -> EXTERN: _ZNSt6localeD1Ev ./5_math_parallel_x86.cpp (198,9)
+         -> INLINE: _ZNSdD2Ev ./5_math_parallel_x86.cpp (565,9) (-10<=337)
+            -> INLINE: _ZNSoD2Ev ./5_math_parallel_x86.cpp (827,27) (-40<=337)
+            -> INLINE: _ZNSiD2Ev ./5_math_parallel_x86.cpp (827,27) (-10<=337)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev ./5_math_parallel_x86.cpp (565,7) (0<=337)
+         -> EXTERN: _ZNSt8ios_baseD2Ev ./5_math_parallel_x86.cpp (276,22)
+   -> _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev ./5_math_parallel_x86.cpp (403,1) (205>45 [EE:65>45])
+
+COMPILE FUNC: _GLOBAL__sub_I_5_math_parallel_x86.cpp
+   -> INLINE: __cxx_global_var_init ./5_math_parallel_x86.cpp (-14950<=337)
+      -> EXTERN: _ZNSt8ios_base4InitC1Ev ./5_math_parallel_x86.cpp (74,25)
+      -> EXTERN: __cxa_atexit ./5_math_parallel_x86.cpp
+
+---- End Inlining Report ------

@@ -1,0 +1,506 @@
+Global optimization report for : _Z15GetOptionPricesPfS_S_S_i
+=================================================================
+
+Global optimization report for : .omp_outlined.
+
+LOOP BEGIN at ./2_parallel.cpp (24, 1)
+LOOP END
+=================================================================
+
+Global optimization report for : main
+
+LOOP BEGIN at ./2_parallel.cpp (54, 5)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 8
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 7.000000 
+    remark #15477: vector cost: 1.531250 
+    remark #15478: estimated potential speedup: 4.390625 
+    remark #15309: vectorization support: normalized vectorization overhead 1.953125
+    remark #15482: vectorized math library calls: 0 
+    remark #15484: vector function calls: 0 
+    remark #15485: serialized function calls: 0
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 0 
+    remark #15451: unmasked unaligned unit stride stores: 3 
+    remark #15456: masked unaligned unit stride loads: 0 
+    remark #15457: masked unaligned unit stride stores: 0 
+    remark #15458: masked indexed (or gather) loads: 0 
+    remark #15459: masked indexed (or scatter) stores: 0 
+    remark #15462: unmasked indexed (or gather) loads: 0 
+    remark #15463: unmasked indexed (or scatter) stores: 0 
+    remark #15554: Unmasked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15555: Masked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15556: Unmasked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15557: Masked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15497: vector compress: 0 
+    remark #15498: vector expand: 0 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN
+<Remainder loop for vectorization>
+    remark #15440: remainder loop was vectorized (masked)
+    remark #15305: vectorization support: vector length 8
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15482: vectorized math library calls: 0 
+    remark #15484: vector function calls: 0 
+    remark #15485: serialized function calls: 0
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 0 
+    remark #15451: unmasked unaligned unit stride stores: 0 
+    remark #15456: masked unaligned unit stride loads: 0 
+    remark #15457: masked unaligned unit stride stores: 3 
+    remark #15458: masked indexed (or gather) loads: 0 
+    remark #15459: masked indexed (or scatter) stores: 0 
+    remark #15462: unmasked indexed (or gather) loads: 0 
+    remark #15463: unmasked indexed (or scatter) stores: 0 
+    remark #15554: Unmasked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15555: Masked VLS-optimized loads (each part of the group counted separately): 0
+    remark #15556: Unmasked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15557: Masked VLS-optimized stores (each part of the group counted separately): 0
+    remark #15497: vector compress: 0 
+    remark #15498: vector expand: 0 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at ./2_parallel.cpp (69, 5)
+
+    LOOP BEGIN at ./2_parallel.cpp (79, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (80:23) and (80:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between (80:23) and (80:23) 
+        remark #25439: Loop unrolled with remainder by 8
+    LOOP END
+
+    LOOP BEGIN at ./2_parallel.cpp (79, 9)
+    <Remainder loop>
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_2_parallel.cpp
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: _ZL18__gthread_active_pv
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcED2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxxL18__exchange_and_addEPVii
+
+DEAD STATIC FUNC: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii
+
+DEAD STATIC FUNC: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii
+
+DEAD STATIC FUNC: _ZNKSs13get_allocatorEv
+
+DEAD STATIC FUNC: _ZNKSs4dataEv
+
+DEAD STATIC FUNC: _ZNKSs4sizeEv
+
+DEAD STATIC FUNC: _ZNKSs6_M_repEv
+
+DEAD STATIC FUNC: _ZNKSs7_M_dataEv
+
+DEAD STATIC FUNC: _ZNKSt5ctypeIcE5widenEc
+
+DEAD STATIC FUNC: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+
+DEAD STATIC FUNC: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+
+DEAD STATIC FUNC: _ZNSaIcEC2ERKS_
+
+DEAD STATIC FUNC: _ZNSaIcEC2Ev
+
+DEAD STATIC FUNC: _ZNSaIcED2Ev
+
+DEAD STATIC FUNC: _ZNSdC2Ev
+
+DEAD STATIC FUNC: _ZNSdD2Ev
+
+DEAD STATIC FUNC: _ZNSiC2Ev
+
+DEAD STATIC FUNC: _ZNSiD2Ev
+
+DEAD STATIC FUNC: _ZNSirsERm
+
+DEAD STATIC FUNC: _ZNSoC2Ev
+
+DEAD STATIC FUNC: _ZNSoD2Ev
+
+DEAD STATIC FUNC: _ZNSolsEPFRSoS_E
+
+DEAD STATIC FUNC: _ZNSolsEd
+
+DEAD STATIC FUNC: _ZNSolsEf
+
+DEAD STATIC FUNC: _ZNSs4_Rep10_M_disposeERKSaIcE
+
+DEAD STATIC FUNC: _ZNSs4_Rep12_S_empty_repEv
+
+DEAD STATIC FUNC: _ZNSsC1EPKcmRKSaIcE
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6lengthEPKc
+
+DEAD STATIC FUNC: _ZNSt15basic_streambufIcSt11char_traitsIcEEC2Ev
+
+DEAD STATIC FUNC: _ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE17_M_stringbuf_initESt13_Ios_Openmode
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE7_M_syncEPcmm
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEEC2ERKSsSt13_Ios_Openmode
+
+DEAD STATIC FUNC: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev
+
+DEAD STATIC FUNC: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED2Ev
+
+DEAD STATIC FUNC: _ZNSt6localeC1Ev
+
+DEAD STATIC FUNC: _ZNSt8ios_baseC2Ev
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEEC2Ev
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev
+
+DEAD STATIC FUNC: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+
+DEAD STATIC FUNC: _ZSt3absf
+
+DEAD STATIC FUNC: _ZSt3erff
+
+DEAD STATIC FUNC: _ZSt3expf
+
+DEAD STATIC FUNC: _ZSt3logf
+
+DEAD STATIC FUNC: _ZSt3maxIfERKT_S2_S2_
+
+DEAD STATIC FUNC: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+
+DEAD STATIC FUNC: _ZSt4sqrtf
+
+DEAD STATIC FUNC: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+
+DEAD STATIC FUNC: _ZSt9terminatev
+
+DEAD STATIC FUNC: _ZStanSt13_Ios_OpenmodeS_
+
+DEAD STATIC FUNC: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+
+DEAD STATIC FUNC: _ZStorSt12_Ios_IostateS_
+
+DEAD STATIC FUNC: _ZStorSt13_Ios_OpenmodeS_
+
+DEAD STATIC FUNC: __clang_call_terminate
+
+DEAD STATIC FUNC: __cxa_begin_catch
+
+DEAD STATIC FUNC: __cxx_global_var_init
+
+DEAD STATIC FUNC: atoi
+
+DEAD STATIC FUNC: llvm.memset.p0i8.i64
+
+DEAD STATIC FUNC: strlen
+
+COMPILE FUNC: _ZNSsD2Ev
+   -> INLINE: _ZNKSs6_M_repEv ./2_parallel.cpp (539,9) (-30<=337)
+      -> INLINE: _ZNKSs7_M_dataEv ./2_parallel.cpp (301,44) (-30<=337)
+   -> INLINE: _ZNKSs13get_allocatorEv ./2_parallel.cpp (539,36) (-40<=337)
+      -> INLINE: _ZNSaIcEC2ERKS_ ./2_parallel.cpp (1818,16) (-40<=337)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./2_parallel.cpp (116,9) (-15040<=337)
+   -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./2_parallel.cpp (539,19) (45<=225)
+      -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./2_parallel.cpp (240,34) (-30<=337)
+      -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./2_parallel.cpp (245,12) (-10<=45)
+         -> INLINE: _ZL18__gthread_active_pv ./2_parallel.cpp (81,9) (-15030<=487)
+         -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./2_parallel.cpp (82,14) (-15030<=487)
+         -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./2_parallel.cpp (84,14) (-15020<=487)
+      -> DELETE: _ZNSs4_Rep10_M_destroyERKSaIcE ./2_parallel.cpp (249,5)
+   -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,9) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+   -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,54) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+   -> DELETE: __clang_call_terminate ./2_parallel.cpp (539,19)
+
+COMPILE FUNC: .omp_outlined.
+   -> EXTERN: __kmpc_for_static_init_4 ./2_parallel.cpp (24,1)
+   -> llvm.smin.i32 ./2_parallel.cpp (25,10)
+   -> INLINE: _ZSt4sqrtf ./2_parallel.cpp (27,32) (-30<=487)
+      -> EXTERN: sqrtf ./2_parallel.cpp (483,12)
+   -> INLINE: _ZSt3logf ./2_parallel.cpp (28,21) (0<=1012)
+      -> EXTERN: logf ./2_parallel.cpp (358,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (28,46)
+   -> INLINE: _ZSt3erff ./2_parallel.cpp (30,29) (0<=337)
+      -> EXTERN: erff ./2_parallel.cpp (1256,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (30,27)
+   -> INLINE: _ZSt3erff ./2_parallel.cpp (31,29) (0<=337)
+      -> EXTERN: erff ./2_parallel.cpp (1256,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (31,27)
+   -> INLINE: _ZSt3expf ./2_parallel.cpp (32,41) (0<=1012)
+      -> EXTERN: expf ./2_parallel.cpp (242,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (32,31)
+   -> EXTERN: __kmpc_for_static_fini ./2_parallel.cpp (24,25)
+
+COMPILE FUNC: _Z15GetOptionPricesPfS_S_S_i
+   -> INLINE: _ZSt4sqrtf ./2_parallel.cpp (21,25) (-30<=487)
+      -> EXTERN: sqrtf ./2_parallel.cpp (483,12)
+   -> EXTERN: __kmpc_fork_call ./2_parallel.cpp (24,1)
+
+COMPILE FUNC: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEEC1ERKSsSt13_Ios_Openmode
+   -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEEC2Ev ./2_parallel.cpp (553,7) (25<=337)
+      -> DELETE: _ZNSt8ios_baseC2Ev ./2_parallel.cpp (455,9)
+      -> DELETE: llvm.memset.p0i8.i64 ./2_parallel.cpp (456,2)
+   -> INLINE: _ZNSdC2Ev ./2_parallel.cpp (555,9) (190<=225)
+      -> INLINE: _ZNSiC2Ev ./2_parallel.cpp (831,9) (40<=337)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E ./2_parallel.cpp (608,15)
+      -> INLINE: _ZNSoC2Ev ./2_parallel.cpp (831,27) (35<=337)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E ./2_parallel.cpp (385,15)
+      -> INLINE: _ZNSiD2Ev ./2_parallel.cpp (831,46) (-10<=45)
+   -> DELETE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEEC2ERKSsSt13_Ios_Openmode ./2_parallel.cpp (555,28)
+   -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E ./2_parallel.cpp (556,15)
+   -> DELETE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev ./2_parallel.cpp (556,36)
+   -> INLINE: _ZNSdD2Ev ./2_parallel.cpp (556,36) (-10<=45)
+      -> INLINE: _ZNSoD2Ev ./2_parallel.cpp (827,27) (-40<=337)
+      -> INLINE: _ZNSiD2Ev ./2_parallel.cpp (827,27) (-10<=337)
+   -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev ./2_parallel.cpp (556,36) (0<=45)
+      -> DELETE: _ZNSt8ios_baseD2Ev ./2_parallel.cpp (276,22)
+
+COMPILE FUNC: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev
+   -> INLINE: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED2Ev ./2_parallel.cpp (565,7) (165<=225)
+      -> INLINE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev ./2_parallel.cpp (565,9) (105<=675)
+         -> INLINE: _ZNSsD2Ev ./2_parallel.cpp (272,25) (60<=225)
+            -> INLINE: _ZNKSs6_M_repEv ./2_parallel.cpp (539,9) (-30<=337)
+               -> INLINE: _ZNKSs7_M_dataEv ./2_parallel.cpp (301,44) (-30<=337)
+            -> INLINE: _ZNKSs13get_allocatorEv ./2_parallel.cpp (539,36) (-40<=337)
+               -> INLINE: _ZNSaIcEC2ERKS_ ./2_parallel.cpp (1818,16) (-40<=337)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./2_parallel.cpp (116,9) (-15040<=337)
+            -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./2_parallel.cpp (539,19) (45<=225)
+               -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./2_parallel.cpp (240,34) (-30<=337)
+               -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./2_parallel.cpp (245,12) (-10<=45)
+                  -> INLINE: _ZL18__gthread_active_pv ./2_parallel.cpp (81,9) (-15030<=487)
+                  -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./2_parallel.cpp (82,14) (-15030<=487)
+                  -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./2_parallel.cpp (84,14) (-15020<=487)
+               -> DELETE: _ZNSs4_Rep10_M_destroyERKSaIcE ./2_parallel.cpp (249,5)
+            -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,9) (-35<=337)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+            -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,54) (-35<=337)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+         -> INLINE: _ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev ./2_parallel.cpp (272,25) (5<=337)
+            -> DELETE: _ZNSt6localeD1Ev ./2_parallel.cpp (198,9)
+      -> INLINE: _ZNSdD2Ev ./2_parallel.cpp (565,9) (-10<=337)
+         -> INLINE: _ZNSoD2Ev ./2_parallel.cpp (827,27) (-40<=337)
+         -> INLINE: _ZNSiD2Ev ./2_parallel.cpp (827,27) (-10<=337)
+   -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev ./2_parallel.cpp (565,7) (0<=337)
+      -> EXTERN: _ZNSt8ios_baseD2Ev ./2_parallel.cpp (276,22)
+
+COMPILE FUNC: main
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./2_parallel.cpp (40,19) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./2_parallel.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./2_parallel.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./2_parallel.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./2_parallel.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./2_parallel.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./2_parallel.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./2_parallel.cpp (535,2)
+   -> INLINE: _ZNSolsEPFRSoS_E ./2_parallel.cpp (40,35) (-180<=337)
+      -> INLINE:  ./2_parallel.cpp (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc ./2_parallel.cpp (565,34) (85<=225)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ ./2_parallel.cpp (444,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv ./2_parallel.cpp (49,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc ./2_parallel.cpp (444,40) (-14955<=225)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv ./2_parallel.cpp (869,8)
+               -> INDIRECT:  ./2_parallel.cpp (870,15)
+         -> EXTERN: _ZNSo3putEc ./2_parallel.cpp (565,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ ./2_parallel.cpp (565,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv ./2_parallel.cpp (587,19)
+   -> INLINE: _ZNSaIcEC2Ev ./2_parallel.cpp (44,28) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2Ev ./2_parallel.cpp (113,7) (-15035<=337)
+   -> EXTERN: _ZNSsC1EPKcRKSaIcE ./2_parallel.cpp (44,28)
+   -> INLINE: _ZStorSt13_Ios_OpenmodeS_ ./2_parallel.cpp (44,23) (-15040<=487)
+   -> _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEEC1ERKSsSt13_Ios_Openmode ./2_parallel.cpp (44,23) (440>225)
+   -> INLINE: _ZNSsD2Ev ./2_parallel.cpp (44,23) (55<=225)
+      -> INLINE: _ZNKSs6_M_repEv ./2_parallel.cpp (539,9) (-30<=337)
+         -> INLINE: _ZNKSs7_M_dataEv ./2_parallel.cpp (301,44) (-30<=337)
+      -> INLINE: _ZNKSs13get_allocatorEv ./2_parallel.cpp (539,36) (-40<=337)
+         -> INLINE: _ZNSaIcEC2ERKS_ ./2_parallel.cpp (1818,16) (-40<=337)
+            -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./2_parallel.cpp (116,9) (-15040<=337)
+      -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./2_parallel.cpp (539,19) (45<=225)
+         -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./2_parallel.cpp (240,34) (-30<=337)
+         -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./2_parallel.cpp (245,12) (-10<=45)
+            -> INLINE: _ZL18__gthread_active_pv ./2_parallel.cpp (81,9) (-15030<=487)
+            -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./2_parallel.cpp (82,14) (-15030<=487)
+            -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./2_parallel.cpp (84,14) (-15020<=487)
+         -> EXTERN: _ZNSs4_Rep10_M_destroyERKSaIcE ./2_parallel.cpp (249,5)
+      -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,9) (-35<=337)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+      -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,54) (-35<=337)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+   -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (44,23) (-35<=337)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+   -> INLINE: _ZNSirsERm ./2_parallel.cpp (45,10) (0<=337)
+      -> EXTERN: _ZNSi10_M_extractImEERSiRT_ ./2_parallel.cpp (191,16)
+   -> INLINE: atoi ./2_parallel.cpp (46,17) (10<=487)
+      -> EXTERN: strtol ./2_parallel.cpp (280,16)
+   -> EXTERN: _Znam ./2_parallel.cpp (49,11)
+   -> INLINE: _ZSt3logf ./2_parallel.cpp (61,17) (-15000<=487)
+      -> EXTERN: logf ./2_parallel.cpp (358,12)
+   -> INLINE: _ZSt4sqrtf ./2_parallel.cpp (61,73) (-30<=487)
+      -> EXTERN: sqrtf ./2_parallel.cpp (483,12)
+   -> INLINE: _ZSt4sqrtf ./2_parallel.cpp (62,27) (-30<=487)
+      -> EXTERN: sqrtf ./2_parallel.cpp (483,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (62,19)
+   -> INLINE: _ZSt4sqrtf ./2_parallel.cpp (63,39) (-30<=1012)
+      -> EXTERN: sqrtf ./2_parallel.cpp (483,12)
+   -> INLINE: _ZSt3erff ./2_parallel.cpp (63,25) (0<=337)
+      -> EXTERN: erff ./2_parallel.cpp (1256,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (63,23)
+   -> INLINE: _ZSt4sqrtf ./2_parallel.cpp (64,39) (-15030<=487)
+      -> EXTERN: sqrtf ./2_parallel.cpp (483,12)
+   -> INLINE: _ZSt3erff ./2_parallel.cpp (64,25) (-15000<=337)
+      -> EXTERN: erff ./2_parallel.cpp (1256,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (64,23)
+   -> INLINE: _ZSt3expf ./2_parallel.cpp (65,34) (-15000<=487)
+      -> EXTERN: expf ./2_parallel.cpp (242,12)
+   -> llvm.fmuladd.f32 ./2_parallel.cpp (65,28)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./2_parallel.cpp (67,15) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./2_parallel.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./2_parallel.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./2_parallel.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./2_parallel.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./2_parallel.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./2_parallel.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./2_parallel.cpp (535,2)
+   -> _ZNSsD2Ev ./2_parallel.cpp (44,23) (55>45 [EE:55>45])
+   -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (44,23) (-35<=45)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+   -> EXTERN: omp_get_max_threads ./2_parallel.cpp (67,40)
+   -> EXTERN: _ZNSolsEi ./2_parallel.cpp (67,37)
+   -> INLINE: _ZNSolsEPFRSoS_E ./2_parallel.cpp (67,62) (-180<=337)
+      -> INLINE:  ./2_parallel.cpp (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc ./2_parallel.cpp (565,34) (85<=225)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ ./2_parallel.cpp (444,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv ./2_parallel.cpp (49,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc ./2_parallel.cpp (444,40) (-14955<=225)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv ./2_parallel.cpp (869,8)
+               -> INDIRECT:  ./2_parallel.cpp (870,15)
+         -> EXTERN: _ZNSo3putEc ./2_parallel.cpp (565,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ ./2_parallel.cpp (565,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv ./2_parallel.cpp (587,19)
+   -> EXTERN: omp_get_wtime ./2_parallel.cpp (72,21)
+   -> INLINE: _Z15GetOptionPricesPfS_S_S_i ./2_parallel.cpp (73,9) (80<=337)
+      -> INLINE: _ZSt4sqrtf ./2_parallel.cpp (21,25) (-30<=487)
+         -> EXTERN: sqrtf ./2_parallel.cpp (483,12)
+      -> EXTERN: __kmpc_fork_call ./2_parallel.cpp (24,1)
+   -> EXTERN: omp_get_wtime ./2_parallel.cpp (74,21)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./2_parallel.cpp (81,19) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./2_parallel.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./2_parallel.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./2_parallel.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./2_parallel.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./2_parallel.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./2_parallel.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./2_parallel.cpp (535,2)
+   -> INLINE: _ZSt3absf ./2_parallel.cpp (80,41) (-15030<=487)
+      -> DELETE: llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+      -> llvm.fabs.f32 ./2_parallel.cpp (88,12)
+   -> INLINE: _ZSt3maxIfERKT_S2_S2_ ./2_parallel.cpp (80,23) (-15020<=487)
+   -> INLINE: _ZNSolsEd ./2_parallel.cpp (81,31) (0<=337)
+      -> EXTERN: _ZNSo9_M_insertIdEERSoT_ ./2_parallel.cpp (221,16)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./2_parallel.cpp (81,42) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./2_parallel.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./2_parallel.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./2_parallel.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./2_parallel.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./2_parallel.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./2_parallel.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./2_parallel.cpp (535,2)
+   -> INLINE: _ZNSolsEf ./2_parallel.cpp (81,58) (5<=337)
+      -> EXTERN: _ZNSo9_M_insertIdEERSoT_ ./2_parallel.cpp (228,9)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ./2_parallel.cpp (81,77) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate ./2_parallel.cpp (533,8) (10<=337)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv ./2_parallel.cpp (152,27) (-30<=337)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ ./2_parallel.cpp (152,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate ./2_parallel.cpp (152,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc ./2_parallel.cpp (536,29) (-15000<=337)
+         -> DELETE: strlen ./2_parallel.cpp (259,16)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l ./2_parallel.cpp (535,2)
+   -> INLINE: _ZNSolsEf ./2_parallel.cpp (81,89) (5<=337)
+      -> EXTERN: _ZNSo9_M_insertIdEERSoT_ ./2_parallel.cpp (228,9)
+   -> INLINE: _ZNSolsEPFRSoS_E ./2_parallel.cpp (81,100) (-180<=337)
+      -> INLINE:  ./2_parallel.cpp (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc ./2_parallel.cpp (565,34) (85<=225)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ ./2_parallel.cpp (444,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv ./2_parallel.cpp (49,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc ./2_parallel.cpp (444,40) (-14955<=225)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv ./2_parallel.cpp (869,8)
+               -> INDIRECT:  ./2_parallel.cpp (870,15)
+         -> EXTERN: _ZNSo3putEc ./2_parallel.cpp (565,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ ./2_parallel.cpp (565,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv ./2_parallel.cpp (587,19)
+   -> EXTERN: _ZdaPv ./2_parallel.cpp (84,5)
+   -> INLINE: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev ./2_parallel.cpp (86,1) (205<=225)
+      -> INLINE: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED2Ev ./2_parallel.cpp (565,7) (165<=225)
+         -> INLINE: _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev ./2_parallel.cpp (565,9) (105<=675)
+            -> INLINE: _ZNSsD2Ev ./2_parallel.cpp (272,25) (60<=225)
+               -> INLINE: _ZNKSs6_M_repEv ./2_parallel.cpp (539,9) (-30<=337)
+                  -> INLINE: _ZNKSs7_M_dataEv ./2_parallel.cpp (301,44) (-30<=337)
+               -> INLINE: _ZNKSs13get_allocatorEv ./2_parallel.cpp (539,36) (-40<=337)
+                  -> INLINE: _ZNSaIcEC2ERKS_ ./2_parallel.cpp (1818,16) (-40<=337)
+                     -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ ./2_parallel.cpp (116,9) (-15040<=337)
+               -> INLINE: _ZNSs4_Rep10_M_disposeERKSaIcE ./2_parallel.cpp (539,19) (45<=225)
+                  -> INLINE: _ZNSs4_Rep12_S_empty_repEv ./2_parallel.cpp (240,34) (-30<=337)
+                  -> INLINE: _ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii ./2_parallel.cpp (245,12) (-10<=45)
+                     -> INLINE: _ZL18__gthread_active_pv ./2_parallel.cpp (81,9) (-15030<=487)
+                     -> INLINE: _ZN9__gnu_cxxL18__exchange_and_addEPVii ./2_parallel.cpp (82,14) (-15030<=487)
+                     -> INLINE: _ZN9__gnu_cxxL25__exchange_and_add_singleEPii ./2_parallel.cpp (84,14) (-15020<=487)
+                  -> EXTERN: _ZNSs4_Rep10_M_destroyERKSaIcE ./2_parallel.cpp (249,5)
+               -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,9) (-35<=337)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+               -> INLINE: _ZNSaIcED2Ev ./2_parallel.cpp (539,54) (-35<=337)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev ./2_parallel.cpp (121,30) (-15035<=337)
+            -> INLINE: _ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev ./2_parallel.cpp (272,25) (5<=337)
+               -> EXTERN: _ZNSt6localeD1Ev ./2_parallel.cpp (198,9)
+         -> INLINE: _ZNSdD2Ev ./2_parallel.cpp (565,9) (-10<=337)
+            -> INLINE: _ZNSoD2Ev ./2_parallel.cpp (827,27) (-40<=337)
+            -> INLINE: _ZNSiD2Ev ./2_parallel.cpp (827,27) (-10<=337)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEED2Ev ./2_parallel.cpp (565,7) (0<=337)
+         -> EXTERN: _ZNSt8ios_baseD2Ev ./2_parallel.cpp (276,22)
+   -> _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev ./2_parallel.cpp (86,1) (205>45 [EE:65>45])
+
+COMPILE FUNC: _GLOBAL__sub_I_2_parallel.cpp
+   -> INLINE: __cxx_global_var_init ./2_parallel.cpp (-14950<=337)
+      -> EXTERN: _ZNSt8ios_base4InitC1Ev ./2_parallel.cpp (74,25)
+      -> EXTERN: __cxa_atexit ./2_parallel.cpp
+
+---- End Inlining Report ------
